@@ -38,7 +38,7 @@ function App() {
     <p style={{fontSize:'2rem', fontWeight:'600'}}>About Me</p>
     <p style={{fontSize:'2rem'}}>Hai, nama saya Feri Handoyo, saya berumur {getAge('1997-04-13')} tahun. saya mahasiswa Institut Teknologi Telkom Purwokerto. saya tertarik dengan dunia Software Engineering yang memiliki motivasi dan semangat di bidang teknologi kreatif dan inovasi. saya sangat suka membangun software indah yang sederhana, ramah serta memiliki performa yang optimal, senang jika dapat bertemu dengan kamu dilain waktu.</p>
     <div style={{display:'flex', gap:'2rem', justifyContent:'center'}}>
-    {socialMedia.map((data, i)=><a key={i} href={data.link} target={'_blank'}><img src={data.icon} alt={data.name} style={{width:'6rem', height:'6rem'}}/></a>)}
+    {socialMedia.map((data, i)=><a key={i} href={data.link} target={'_blank'} rel="noreferrer"><img src={data.icon} alt={data.name} style={{width:'6rem', height:'6rem'}}/></a>)}
     </div>
     </div>
   );
